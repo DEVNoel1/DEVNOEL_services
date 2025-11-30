@@ -243,6 +243,7 @@ h2::before {
     transition: all 0.5s ease;
   }
   .menu_mob {
+    margin-top: 13px;
     display: flex;
     width: 40px;
     height: 40px;
