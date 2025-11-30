@@ -181,7 +181,7 @@ h2::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/images/point.jpg); /* image par défaut */
+  background-image: url(../../images/point.jpg); /* image par défaut */
   background-size: cover;
   background-position: center;
   transition: transform 1s ease, filter 0.3s ease, opacity 0.3s ease;
