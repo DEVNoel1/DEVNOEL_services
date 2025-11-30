@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="DEV NOEL" />
+    <meta
+      name="description"
+      content="Assistance technique et développement web par DEV NOEL"
+    />
+    <title>DEV NOEL | ASSISTANCE TECH</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <menu
+        ><div class="logo">
+          <a href=""
+            ><img
+              src="images/logo.png"
+              width="150"
+              height="59"
+              alt="logo Assistance Tech"
+          /></a>
+        </div>
+        <div class="menu_mob" role="button" tabindex="1">
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="src/pages/service.html">Services</a></li>
+            <li><a href="src/pages/apropos.html">À propos</a></li>
+            <li><a href="src/pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </menu>
+      <h1>Assistance Informatique pour Tous</h1>
+      <br />
+      <br />
+      <p>Soutien personnalisé, clair et patient. À domicile ou à distance.</p>
+      <a class="btn" href="src/pages/contact.html">Me contacter</a>
+    </header>
+    <section>
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card c" style="--bg: url(/images/cardcomput.png)">
+          Optimisation PC
+        </div>
+        <div class="card c" style="--bg: url(/images/imgwifi.png)">
+          Internet & Wi-Fi
+        </div>
+        <div class="card c" style="--bg: url(/images/device.png)">
+          Aide Smartphones
+        </div>
+        <div class="card c" style="--bg: url(/images/support.png)">
+          Sécurité Numérique
+        </div>
+        <div
+          style="
+            height: 400px;
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <button
+            style="
+              width: 150px;
+              height: 50px;
+              border-radius: 20%;
+              box-shadow: 4px 5px 3px 5px black;
+              font-size: 16px;
+              background-color: #1a73e8;
+              color: white;
+              border: none;
+              cursor: pointer;
+              justify-self: center;
+            "
+            onclick="location.href='src/pages/service.html'"
+          >
+            En savoir plus ...
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Pourquoi nous choisir ?</h2>
+      <div class="grid">
+        <div
+          class="card crd"
+          data-title="Accompagnement simple & patient"
+          style="--bg: url('/images/client.jpg')"
+        ></div>
+        <div
+          class="card crd"
+          data-title="Disponibilité flexible
+          - En ligne ou à domicile"
+          style="--bg: url('/images/open.jpg')"
+        ></div>
+        <div
+          class="card crd"
+          data-title="Support personnalisé
+          - Chaque client bénéficie d’un suivi :
+          Adapté à son niveau |
+          Adapté à ses outils"
+          style="--bg: url('/images/repare.jpg')"
+        ></div>
+        <div
+          class="card crd"
+          data-title="Transparence totale | Discussions avant tout engagement"
+          style="--bg: url('/images/negoc.jpg')"
+        ></div>
+        <div
+          class="card crd"
+          data-title="Confidentialité & sécurité | Respect total de la vie privée |
+        Manipulation sécurisée des données"
+          style="--bg: url('/images/cade.jpg')"
+        ></div>
+        <div
+          class="card crd"
+          data-title="Satisfaction garantie (Service jusqu’à résolution complète)"
+          style="--bg: url('/images/sat.jpg')"
+        ></div>
+      </div>
+    </section>
+    <section>
+      <h2>Process</h2>
+      <h3>Comment ça se passe ?</h3>
+      <br />
+      <p>Etapes simple:</p>
+      <ol class="nn">
+        <br />
+        <li>Vous m’expliquez votre besoin.</li>
+        <br />
+        <li>
+          J’évalue la situation Je viens sur place ou je vous aide à distance.
+        </li>
+        <br />
+        <li>On résout le problème ensemble.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>À propos</h2>
+      <p>
+        Je suis Noël, développeur passionné par le web, la cybersécurité et
+        l’intelligence artificielle. J’aime créer des interfaces propres,
+        modernes et fonctionnelles tout en apprenant chaque jour de nouvelles
+        technologies.
+      </p>
+    </section>
+    <footer>© Tous droits réservés | DEV NOEL</footer>
+    <script>
+      const btn = document.querySelector(".menu_mob");
+      const nav = document.querySelector("nav ul");
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("open");
+        nav.classList.toggle("open");
+      });
+      const boutt = document.querySelector(".btn");
+      boutt.addEventListener("mouseover", () => {
+        boutt.classList.add("stop");
+      });
+      boutt.addEventListener("mouseout", () => {
+        boutt.classList.remove("stop");
+      });
+    </script>
+  </body>
+</html>

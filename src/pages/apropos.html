@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="DEV NOEL" />
+    <meta
+      name="description"
+      content="Assistance technique et développement web par DEV NOEL"
+    />
+    <title>DEV NOEL | ASSISTANCE TECH</title>
+    <link rel="stylesheet" href="../css/style_apropos.css" />
+  </head>
+  <body>
+    <header>
+      <menu
+        ><div class="logo">
+          <a href="/index.html"
+            ><img
+              src="/images/logo.png"
+              width="150"
+              height="59"
+              alt="logo Assistance Tech"
+          /></a>
+        </div>
+        <div class="menu_mob" role="button" tabindex="1">
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </menu>
+    </header>
+    <section>
+      <h1>À propos</h1>
+      <div class="intro-text">
+        <h3>Salut, moi c’est Noël</h3>
+        <br />
+        <p style="font-size: large">
+          Développeur passionné par le web, la cybersécurité et l’intelligence
+          artificielle. <br />
+          J’aime créer des interfaces propres, modernes et fonctionnelles tout
+          en apprenant chaque jour de nouvelles technologies. Etudiant en
+          informatique (genie logiciel) à Deming Excellent Institue (D.E.I), je
+          suis toujours à la recherche de nouveaux défis pour améliorer mes
+          compétences et contribuer à des projets.
+        </p>
+        <br />
+        <div class="about-img">
+          <img src="/images/photo.jpg" alt="Noël, développeur" />
+        </div>
+        <br /><br /><br />
+        <div class="about-container">
+          <div class="timeline"></div>
+          <div class="about-row reveal">
+            <div class="about-text">
+              <h3>Développeur Web & Mobile</h3>
+              <p>
+                Je conçois des interfaces modernes, rapides et adaptées aux
+                besoins des utilisateurs.
+              </p>
+            </div>
+            <div class="about-img">
+              <img src="/images/dev.jpg" alt="développeur" />
+            </div>
+          </div>
+          <div class="about-row reverse reveal">
+            <div class="about-text">
+              <h3>Maintenance</h3>
+              <p>
+                J'assure la maintenance et les mises à jour pour garantir des
+                performances optimales.
+              </p>
+            </div>
+            <div class="about-img">
+              <img src="/images/main.jpg" alt="maintenance" />
+            </div>
+          </div>
+          <div class="about-row reveal">
+            <div class="about-text">
+              <h3>Intelligence Artificielle & Automatisation</h3>
+              <p>
+                J'explore et crée des solutions intelligentes pour automatiser
+                les tâches et améliorer la productivité.
+              </p>
+            </div>
+            <div class="about-img">
+              <img src="/images/ia.jpg" alt="intelligence artificielle" />
+            </div>
+          </div>
+          <div class="about-row reverse reveal">
+            <div class="about-text">
+              <h3>compétence transversale</h3>
+              <p>
+                Au fil de mes années d’étude, j’ai développé une véritable
+                aisance dans la communication et la transmission du savoir.
+                J’aime expliquer clairement, guider avec patience et m’adapter
+                au niveau de chacun pour rendre chaque échange utile et
+                accessible.
+              </p>
+            </div>
+            <div class="about-img">
+              <img src="/images/educ.png" alt="education" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>© Tous droits réservés | DEV NOEL</footer>
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+      const btn = document.querySelector(".menu_mob");
+      const nav = document.querySelector("nav ul");
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("open");
+        nav.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
