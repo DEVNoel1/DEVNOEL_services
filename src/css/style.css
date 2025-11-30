@@ -12,7 +12,7 @@ body {
 header {
   position: relative;
   text-align: center;
-  background-image: url(/images/content.jpg);
+  background-image: url(../../images/content.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
