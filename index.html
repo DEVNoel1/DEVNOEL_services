@@ -1,6 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S6CQMBE0SE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S6CQMBE0SE");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="DEV NOEL" />
@@ -39,8 +53,8 @@
   </head>
   <body>
     <header>
-      <menu
-        ><div class="logo">
+      <menu>
+        <div class="logo">
           <a href="index.html"
             ><img
               src="images/logo.png"
@@ -124,7 +138,7 @@
               cursor: pointer;
               justify-self: center;
             "
-            onclick="location.href='src/pages/service.html'"
+            onclick="location.href = 'src/pages/service.html'"
           >
             En savoir plus ...
           </button>
@@ -137,7 +151,7 @@
         <div
           class="card crd"
           data-title="Accompagnement simple & patient"
-          style="--bg: url('../../images/client.jpg')"
+          style="--bg: url(&quot;../../images/client.jpg&quot;)"
           role="img"
           aria-label="Ici il est question de la façon dont j'exerce le travail"
           data-description="Je prends le temps d'expliquer chaque étape du processus, en utilisant un langage clair et accessible, pour que vous compreniez parfaitement les solutions mises en place."
@@ -146,7 +160,7 @@
           class="card crd"
           data-title="Disponibilité flexible
           - En ligne ou à domicile"
-          style="--bg: url('../../images/open.jpg')"
+          style="--bg: url(&quot;../../images/open.jpg&quot;)"
           role="img"
           aria-label="Illustration de la disponibilité flexible avec options en ligne ou à domicile"
           data-description="Je m'adapte à votre emploi du temps et à vos préférences, offrant des services à distance via des outils en ligne ou des interventions à domicile selon ce qui vous convient le mieux."
@@ -157,7 +171,7 @@
           - Chaque client bénéficie d’un suivi :
           Adapté à son niveau |
           Adapté à ses outils"
-          style="--bg: url('../../images/repare.jpg')"
+          style="--bg: url(&quot;../../images/repare.jpg&quot;)"
           role="img"
           aria-label="Illustration du support personnalisé adapté au niveau et aux outils de chaque client"
           data-description="Je suis dédié à vous accompagner dans vos besoins numériques, en adaptant mon approche à votre niveau d'expertise et à vos outils spécifiques."
@@ -165,7 +179,7 @@
         <div
           class="card crd"
           data-title="Transparence totale | Discussions avant tout engagement"
-          style="--bg: url('../../images/negoc.jpg')"
+          style="--bg: url(&quot;../../images/negoc.jpg&quot;)"
           role="img"
           aria-label="Image représentant la transparence totale et les discussions avant tout engagement"
           data-description="Je m'engage à être clair et honnête dès le début, en discutant ouvertement de vos besoins, des solutions possibles et des coûts associés avant toute intervention."
@@ -174,7 +188,7 @@
           class="card crd"
           data-title="Confidentialité & sécurité | Respect total de la vie privée |
         Manipulation sécurisée des données"
-          style="--bg: url('../../images/cade.jpg')"
+          style="--bg: url(&quot;../../images/cade.jpg&quot;)"
           role="img"
           aria-label="Image illustrant la confidentialité et la sécurité avec respect de la vie privée et manipulation sécurisée des données"
           data-description="Je prends très au sérieux la protection de vos informations personnelles et professionnelles, en assurant une manipulation sécurisée de vos données et en respectant strictement votre vie privée."
@@ -182,7 +196,7 @@
         <div
           class="card crd"
           data-title="Satisfaction garantie (Service jusqu’à résolution complète)"
-          style="--bg: url('../../images/sat.jpg')"
+          style="--bg: url(&quot;../../images/sat.jpg&quot;)"
           role="img"
           aria-label="Image symbolisant la satisfaction garantie avec service jusqu’à résolution complète"
           data-description="Mon objectif est votre satisfaction totale. Je m'engage à travailler avec vous jusqu'à ce que vos problèmes soient entièrement résolus et que vous soyez pleinement satisfait des résultats."

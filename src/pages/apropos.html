@@ -1,6 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S6CQMBE0SE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S6CQMBE0SE");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="DEV NOEL" />
@@ -14,8 +28,8 @@
   </head>
   <body>
     <header>
-      <menu
-        ><div class="logo">
+      <menu>
+        <div class="logo">
           <a href="../../index.html"
             ><img
               src="../../images/logo.png"
@@ -122,7 +136,7 @@
             }
           });
         },
-        { threshold: 0.2 }
+        { threshold: 0.2 },
       );
 
       document
