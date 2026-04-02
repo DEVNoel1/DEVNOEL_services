@@ -44,6 +44,7 @@
         </div>
         <nav>
           <ul>
+            <li><a href="../../index.html">Accueil</a></li>
             <li><a href="service.html">Services</a></li>
             <li><a href="apropos.html">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -248,6 +249,20 @@
       boutt.addEventListener("mouseout", () => {
         boutt.classList.remove("stop");
       });
+
+      const cards = document.querySelectorAll(".card");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      cards.forEach((card) => observer.observe(card));
     </script>
   </body>
 </html>
