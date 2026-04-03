@@ -12,7 +12,7 @@ body {
 header {
   position: relative;
   text-align: center;
-  background-image: url(../../images/content.jpg);
+  background-image: url(../../images/content.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -192,7 +192,7 @@ h2::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../../images/point.jpg); /* image par défaut */
+  background-image: url(../../images/point.webp); /* image par défaut */
   background-size: cover;
   background-position: center;
   transition:
