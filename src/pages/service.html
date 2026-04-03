@@ -239,34 +239,6 @@
       </div>
     </section>
     <footer>© Tous droits réservés | DEV NOEL</footer>
-    <script>
-      const btn = document.querySelector(".menu_mob");
-      const nav = document.querySelector("nav ul");
-      btn.addEventListener("click", () => {
-        btn.classList.toggle("open");
-        nav.classList.toggle("open");
-      });
-      const boutt = document.querySelector(".btn");
-      boutt.addEventListener("mouseover", () => {
-        boutt.classList.add("stop");
-      });
-      boutt.addEventListener("mouseout", () => {
-        boutt.classList.remove("stop");
-      });
-
-      const cards = document.querySelectorAll(".card");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.5 },
-      );
-      cards.forEach((card) => observer.observe(card));
-    </script>
+    <script src="../../src/js/script.js" defer></script>
   </body>
 </html>

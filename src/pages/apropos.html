@@ -128,27 +128,6 @@
     </section>
 
     <footer>© Tous droits réservés | DEV NOEL</footer>
-    <script>
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("active");
-            }
-          });
-        },
-        { threshold: 0.2 },
-      );
-
-      document
-        .querySelectorAll(".reveal")
-        .forEach((el) => observer.observe(el));
-      const btn = document.querySelector(".menu_mob");
-      const nav = document.querySelector("nav ul");
-      btn.addEventListener("click", () => {
-        btn.classList.toggle("open");
-        nav.classList.toggle("open");
-      });
-    </script>
+    <script src="../js/script.js" defer></script>
   </body>
 </html>
