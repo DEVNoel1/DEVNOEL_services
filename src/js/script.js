@@ -14,14 +14,6 @@
 const btn = document.querySelector(".menu_mob"),
   nav = document.querySelector("nav ul");
 if (btn && nav) {
-<<<<<<< HEAD
-  btn.addEventListener("click", () => {
-    btn.classList.toggle("open");
-    nav.classList.toggle("open");
-  });
-}
-
-=======
   const setMenu = (open) => {
     btn.classList.toggle("open", open);
     nav.classList.toggle("open", open);
@@ -46,7 +38,6 @@ document.querySelectorAll("[data-track]").forEach((el) => {
   });
 });
 
->>>>>>> master
 // Effet hover pour bouton principal (index / service / apropos etc.)
 const boutt = document.querySelector(".btn");
 if (boutt) {
@@ -93,19 +84,13 @@ if (cardEls.length) {
           }
         });
       },
-<<<<<<< HEAD
-      { threshold: 0.5, rootMargin: "0px 0px -15% 0px" },
-=======
       { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
->>>>>>> master
     );
     cardEls.forEach((card) => cardObserver.observe(card));
   } else {
     cardEls.forEach((card) => card.classList.add("visible"));
   }
 }
-<<<<<<< HEAD
-=======
 
 
 // ---------------------------------------------------------------------
@@ -196,4 +181,3 @@ document.querySelectorAll('form[action*="formsubmit"]').forEach((form) => {
     if (label) label.textContent = "Envoi en cours…";
   });
 });
->>>>>>> master

@@ -10,11 +10,7 @@ body {
   color: #1a1a1a;
 }
 
-<<<<<<< HEAD
-menu {
-=======
 .topbar {
->>>>>>> master
   display: grid;
   position: fixed;
   top: 0;
