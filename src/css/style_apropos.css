@@ -12,7 +12,11 @@ body {
 header {
   margin-bottom: 150px;
 }
+<<<<<<< HEAD
 menu {
+=======
+.topbar {
+>>>>>>> master
   display: grid;
   position: fixed;
   top: 0;

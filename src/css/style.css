@@ -26,7 +26,11 @@ header {
     opacity: 1;
   }
 }
+<<<<<<< HEAD
 menu {
+=======
+.topbar {
+>>>>>>> master
   display: grid;
   position: fixed;
   top: 0;
