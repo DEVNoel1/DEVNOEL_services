@@ -2,6 +2,12 @@
 <html lang="fr">
   <head>
     <script>
+      // Affiche explicitement index.html dans l’URL lorsqu’on ouvre la racine du site.
+      if (window.location.pathname === "/DEVNOEL_services/") {
+        window.location.replace(
+          window.location.pathname + "index.html" + window.location.search + window.location.hash,
+        );
+      }
       document.documentElement.classList.add("js");
     </script>
     <!-- Google tag (gtag.js) -->
