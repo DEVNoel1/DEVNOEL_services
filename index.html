@@ -2,12 +2,6 @@
 <html lang="fr">
   <head>
     <script>
-      // Affiche explicitement index.html dans l’URL lorsqu’on ouvre la racine du site.
-      if (window.location.pathname === "/DEVNOEL_services/") {
-        window.location.replace(
-          window.location.pathname + "index.html" + window.location.search + window.location.hash,
-        );
-      }
       document.documentElement.classList.add("js");
     </script>
     <!-- Google tag (gtag.js) -->
@@ -157,40 +151,22 @@
       <section class="band band--glow">
         <h2>Services</h2>
         <div class="grid">
-          <a
-            class="card c"
-            href="src/pages/service.html"
-            style="--bg: url(../../images/siteweb.webp)"
+          <a class="card c c--web" href="src/pages/service.html"
             ><span>Développement web &amp; mobile</span></a
           >
-          <a
-            class="card c"
-            href="src/pages/service.html"
-            style="--bg: url(../../images/cardcomput.webp)"
+          <a class="card c c--pc" href="src/pages/service.html"
             ><span>Optimisation PC</span></a
           >
-          <a
-            class="card c"
-            href="src/pages/service.html"
-            style="--bg: url(../../images/imgwifi.webp)"
+          <a class="card c c--wifi" href="src/pages/service.html"
             ><span>Internet &amp; Wi-Fi</span></a
           >
-          <a
-            class="card c"
-            href="src/pages/service.html"
-            style="--bg: url(../../images/device.webp)"
+          <a class="card c c--mobile" href="src/pages/service.html"
             ><span>Aide Smartphones</span></a
           >
-          <a
-            class="card c"
-            href="src/pages/service.html"
-            style="--bg: url(../../images/support.webp)"
+          <a class="card c c--secu" href="src/pages/service.html"
             ><span>Sécurité Numérique</span></a
           >
-          <a
-            class="card c"
-            href="src/pages/service.html"
-            style="--bg: url(../../images/cloud.webp)"
+          <a class="card c c--cloud" href="src/pages/service.html"
             ><span>Sauvegarde et Cloud</span></a
           >
         </div>
