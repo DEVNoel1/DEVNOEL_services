@@ -1791,3 +1791,8 @@ header:not(.hero) {
 .card.c--cloud {
   background-image: url("../../images/cloud.webp");
 }
+.intro-text > .about-img img {
+  height: auto; /* annule le height: 250px hérité */
+  aspect-ratio: 18 / 9;
+  object-position: 50% 38%; /* cadre sur le visage */
+}
